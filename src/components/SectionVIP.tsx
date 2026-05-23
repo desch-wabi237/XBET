@@ -1,25 +1,18 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { 
-  Ticket, 
-  TrendingUp, 
-  Clock, 
-  Shield, 
-  MessageCircle, 
+import {
+  Ticket,
+  Clock,
+  MessageCircle,
   Crown,
   Users,
-  Award,
   Star,
-  Zap,
   Check,
   Sparkles,
   Diamond,
   Rocket,
   Target,
-  BarChart3,
-  Phone,
-  Mail,
-  Gift
+  BarChart3
 } from 'lucide-react'
 import { useStore } from '../store/useStore'
 

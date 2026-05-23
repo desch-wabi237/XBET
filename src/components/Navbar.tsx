@@ -40,12 +40,6 @@ const Navbar = () => {
       : 'bg-gradient-to-r from-black via-yellow-950/20 to-black'
   }
 
-  const getLogoStyle = () => {
-    return theme === 'blue'
-      ? 'text-blue-400'
-      : 'text-yellow-500'
-  }
-
   return (
     <>
       <motion.nav

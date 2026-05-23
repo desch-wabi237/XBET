@@ -165,21 +165,30 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="grid grid-cols-3 gap-6 mt-12"
             >
-              {statItems.map((item, index) => (
-                <motion.div
-                  key={item.label}
-                  whileHover={{ y: -5 }}
-                  className="glass-card p-4 text-center"
-                >
-                  <item.icon className={`w-6 h-6 mx-auto mb-2 ${
-                    theme === 'blue' ? 'text-primary-light' : 'text-yellow-400'
-                  }`} />
-                  <div className="text-2xl font-bold">
-                    {item.value.toLocaleString()}{item.suffix}
-                  </div>
-                  <div className="text-text-secondary text-sm">{item.label}</div>
-                </motion.div>
-              ))}
+              {statItems.map((item) => (
+  <motion.div
+    key={item.label}
+    whileHover={{ y: -5 }}
+    className="glass-card p-4 text-center"
+  >
+    <item.icon
+      className={`w-6 h-6 mx-auto mb-2 ${
+        theme === 'blue'
+          ? 'text-primary-light'
+          : 'text-yellow-400'
+      }`}
+    />
+
+    <div className="text-2xl font-bold">
+      {item.value.toLocaleString()}
+      {item.suffix}
+    </div>
+
+    <div className="text-text-secondary text-sm">
+      {item.label}
+    </div>
+  </motion.div>
+))}
             </motion.div>
           </motion.div>
 
