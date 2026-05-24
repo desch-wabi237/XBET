@@ -1,10 +1,10 @@
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { 
-  UserPlus, 
-  Gift, 
-  Ticket, 
-  Copy, 
+import {
+  UserPlus,
+  Gift,
+  Ticket,
+  Copy,
   Check,
   Star,
   Crown,
@@ -13,7 +13,6 @@ import {
   Zap,
   ChevronDown,
   ChevronUp,
-  Phone,
   Send,
   Diamond,
   Award,
@@ -178,10 +177,6 @@ const CommentCommencer = () => {
     id="comment-commencer"  // ← AJOUTE CET ID
     className="py-12 md:py-20 overflow-hidden"
   >
-    {/* reste du code */}
-  
-
-    <section ref={sectionRef} className="py-12 md:py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -278,7 +273,9 @@ const CommentCommencer = () => {
                                 : 'glass hover:bg-white/10'
                             } text-white`}
                           >
-                            {btn.icon && <btn.icon className="w-4 h-4" />}
+                           {'icon' in btn && btn.icon ? (
+   <btn.icon className="w-4 h-4" />
+) : null}
                             {btn.label}
                           </motion.a>
                         ))}
@@ -548,7 +545,6 @@ const CommentCommencer = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </section>
     </section>
   )
 }

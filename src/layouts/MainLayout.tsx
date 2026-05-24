@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import { useStore } from '../store/useStore'
 
 const MainLayout = () => {
-  const { theme } = useStore()
+  useStore()
 
   return (
     <div className={`min-h-screen gradient-bg theme-transition`}>

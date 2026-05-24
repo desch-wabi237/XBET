@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { Moon, Sun, Sparkles } from 'lucide-react'
+import { Moon, Sun } from 'lucide-react'
 import { useStore } from '../store/useStore'
 
 const ThemeSwitcher = () => {

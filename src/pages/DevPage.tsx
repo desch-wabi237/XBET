@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Zap, Shield, TrendingUp, Menu, X, ArrowRight, Check } from 'lucide-react'
 
 const DevPage = () => {
-  const [buttonState, setButtonState] = useState<'default' | 'hover' | 'click'>('default')
+  const [, setButtonState] = useState<'default' | 'hover' | 'click'>('default')
   const [cardHover, setCardHover] = useState<string | null>(null)
 
   const components = {
