@@ -28,7 +28,7 @@ const SectionVIP = () => {
   const sectionRef = useRef(null)
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 })
   const { theme } = useStore()
-  const [hoveredPlan, setHoveredPlan] = useState<number | null>(null)
+  const [, setHoveredPlan] = useState<number | null>(null)
 
   const getGradientClass = () => {
     return theme === 'blue'
@@ -194,7 +194,7 @@ const SectionVIP = () => {
           </div>
           
           <h2 className="text-2xl md:text-4xl font-bold mb-2 font-['Orbitron']">
-            <span className={`bg-gradient-to-r ${getGradientClass()} bg-clip-text text-transparent`}>
+            <span className={`bg-linear-to-r ${getGradientClass()} bg-clip-text text-transparent`}>
               💎 Passez au niveau supérieur avec notre VIP
             </span>
           </h2>
@@ -229,7 +229,7 @@ const SectionVIP = () => {
                 />
                 
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/30" />
                 
                 {/* Contenu */}
                 <div className="relative z-10 h-full flex flex-col justify-between p-4">
@@ -265,7 +265,7 @@ const SectionVIP = () => {
             Choisissez votre formule
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-            {plans.map((plan, index) => (
+            {plans.map((plan) => (
               <motion.div
                 key={plan.id}
                 variants={itemVariants}
@@ -316,8 +316,8 @@ const SectionVIP = () => {
                   className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-300 w-full justify-center ${
                     plan.popular
                       ? theme === 'blue'
-                        ? 'bg-gradient-to-r from-primary to-primary-light'
-                        : 'bg-gradient-to-r from-yellow-600 to-yellow-500'
+                        ? 'bg-linear-to-r from-primary to-primary-light'
+                        : 'bg-linear-to-r from-yellow-600 to-yellow-500'
                       : 'glass hover:bg-white/10'
                   } text-white`}
                 >
@@ -424,8 +424,8 @@ const SectionVIP = () => {
                 whileTap={{ scale: 0.95 }}
                 className={`inline-flex items-center gap-2 px-6 py-2 rounded-full text-sm font-semibold text-white transition-all duration-300 ${
                   theme === 'blue'
-                    ? 'bg-gradient-to-r from-primary to-primary-light'
-                    : 'bg-gradient-to-r from-yellow-600 to-yellow-500'
+                    ? 'bg-linear-to-r from-primary to-primary-light'
+                    : 'bg-linear-to-r from-yellow-600 to-yellow-500'
                 }`}
               >
                 <Crown className="w-4 h-4" />

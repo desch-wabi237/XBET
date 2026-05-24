@@ -73,7 +73,7 @@ const PronosticsGagnants = () => {
           className="mb-4"
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: "'Orbitron', monospace" }}>
-            <span className={`bg-gradient-to-r ${
+            <span className={`bg-gradient ${
               theme === 'blue' 
                 ? 'from-primary via-primary-light to-accent' 
                 : 'from-yellow-500 via-yellow-400 to-yellow-300'
@@ -133,7 +133,7 @@ const PronosticsGagnants = () => {
                 initial={{ opacity: 0, x: 30 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className="flex-shrink-0"
+                className="shrink-0"
                 style={{
                   scrollSnapAlign: 'start',
                   width: 'clamp(260px, 30vw, 300px)'
@@ -141,7 +141,7 @@ const PronosticsGagnants = () => {
               >
                 <div className={`relative rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 ${getGlowClass()}`}>
                   {/* Image */}
-                  <div className="relative aspect-[3/4] overflow-hidden bg-background-secondary">
+                  <div className="relative `aspect-[3/4]` overflow-hidden bg-background-secondary">
                     <img
                       src={item.image}
                       alt={item.sport}
@@ -149,7 +149,7 @@ const PronosticsGagnants = () => {
                     />
                     
                     {/* Gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
                     
                     {/* Badge GAGNÉ */}
                     <div className="absolute top-2 right-2">

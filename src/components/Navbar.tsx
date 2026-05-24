@@ -85,7 +85,7 @@ const Navbar = () => {
                     {item.label}
                   </span>
                   <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                    theme === 'blue' ? 'bg-gradient-to-r from-blue-500 to-blue-400' : 'bg-gradient-to-r from-yellow-500 to-yellow-400'
+                    theme === 'blue' ? 'bg-linear-to-r from-blue-500 to-blue-400' : 'bg-linear-to-r from-yellow-500 to-yellow-400'
                   }`} />
                 </motion.a>
               ))}
@@ -99,11 +99,11 @@ const Navbar = () => {
                 whileTap={{ scale: 0.95 }}
                 className={`relative overflow-hidden group px-6 py-2 rounded-full font-semibold ${
                   theme === 'blue' 
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400'
-                    : 'bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400'
+                    ? 'bg-linear-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400'
+                    : 'bg-linear-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400'
                 }`}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-linear-to-r from-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="relative z-10 text-white">S'inscrire</span>
               </motion.button>
             </div>
@@ -169,8 +169,8 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 className={`mt-8 px-8 py-3 rounded-full font-semibold text-white ${
                   theme === 'blue'
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-500'
-                    : 'bg-gradient-to-r from-yellow-600 to-yellow-500'
+                    ? 'bg-linear-to-r from-blue-600 to-blue-500'
+                    : 'bg-linear-to-r from-yellow-600 to-yellow-500'
                 }`}
                 onClick={toggleMenu}
               >

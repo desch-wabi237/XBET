@@ -191,7 +191,7 @@ const CommentCommencer = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold mb-4 font-['Orbitron']">
-            <span className={`bg-gradient-to-r ${getGradientClass()} bg-clip-text text-transparent`}>
+            <span className={` ${getGradientClass()} bg-clip-text text-transparent`}>
               🚀 Comment commencer ?
             </span>
           </h2>
@@ -204,9 +204,9 @@ const CommentCommencer = () => {
 
         {/* Timeline Line */}
         <div className="relative mb-8">
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary-light to-accent opacity-30 md:-translate-x-px" />
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient from-primary via-primary-light to-accent opacity-30 md:-translate-x-px" />
           
-          <div className="hidden md:block absolute left-1/2 top-1/2 w-full h-0.5 bg-gradient-to-r from-primary via-primary-light to-accent opacity-30 -translate-y-1/2" />
+          <div className="hidden md:block absolute left-1/2 top-1/2 w-full h-0.5 bg-gradientfrom-primary via-primary-light to-accent opacity-30 -translate-y-1/2" />
 
           {/* Timeline Steps */}
           <div className="relative z-10">
@@ -384,7 +384,7 @@ const CommentCommencer = () => {
                                           key={idx}
                                           whileHover={{ scale: 1.05 }}
                                           whileTap={{ scale: 0.95 }}
-                                          className="flex-shrink-0 w-40 h-40 rounded-lg overflow-hidden glass cursor-pointer relative group"
+                                          className="shrink-0 w-40 h-40 rounded-lg overflow-hidden glass cursor-pointer relative group"
                                           onClick={() => openImageModal(img, step.images, idx)}
                                         >
                                           <img
@@ -426,8 +426,8 @@ const CommentCommencer = () => {
                                     whileTap={{ scale: 0.95 }}
                                     className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 w-full justify-center ${
                                       theme === 'blue'
-                                        ? 'bg-gradient-to-r from-primary to-primary-light'
-                                        : 'bg-gradient-to-r from-yellow-600 to-yellow-500'
+                                        ? 'bg-linear-to-r from-primary to-primary-light'
+                                        : 'bg-linear-to-r from-yellow-600 to-yellow-500'
                                     } text-white`}
                                   >
                                     <Crown className="w-5 h-5" />

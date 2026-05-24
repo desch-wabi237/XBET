@@ -115,7 +115,7 @@ const Hero = () => {
               className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
              Rejoignez 1xBet et Melbet{' '}
-              <span className={`bg-gradient-to-r ${getGradientClass()} bg-clip-text text-transparent`}>
+              <span className={`bg-linear-to-r ${getGradientClass()} bg-clip-text text-transparent`}>
                 activez vos bonus exclusifs avec
               </span>{' '}
               code promo CRAH2
@@ -143,7 +143,7 @@ const Hero = () => {
                 className={`relative overflow-hidden group px-8 py-3 rounded-full font-semibold transition-all duration-300 cursor-pointer ${getButtonClass()}`}
               >
                 <span className="relative z-10">Commencer maintenant</span>
-                <div className={`absolute inset-0 bg-gradient-to-r from-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+                <div className={`absolute inset-0 bg-linear-to-r from-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
                   theme === 'blue' ? 'from-primary-light to-primary' : 'from-yellow-400 to-yellow-600'
                 }`} />
               </motion.button>
@@ -201,7 +201,7 @@ const Hero = () => {
           >
             <div className="relative glass-card p-8">
               <div className={`absolute inset-0 rounded-2xl ${
-                theme === 'blue' ? 'bg-gradient-to-br from-primary/20' : 'bg-gradient-to-br from-yellow-600/20'
+                theme === 'blue' ? 'bg-linear-to-br from-primary/20' : 'bg-linear-to-br from-yellow-600/20'
               } to-transparent`} />
               <div className="relative z-10">
                 <motion.div
