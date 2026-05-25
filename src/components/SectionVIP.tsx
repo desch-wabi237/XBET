@@ -47,35 +47,30 @@ const SectionVIP = () => {
     {
       icon: Target,
       title: 'Scores exacts',
-      description: 'Pronostics précis avec scores finaux garantis pour maximiser vos gains sur les paris.',
       backgroundImage: '/images/vip-scores.png',
       badge: 'Précision 95%'
     },
     {
       icon: Clock,
       title: 'Pronostics 24h avant',
-      description: 'Recevez tous les pronostics 24 heures avant la publication publique.',
       backgroundImage: '/images/vip-early.png',
       badge: 'Avant tout le monde'
     },
     {
       icon: MessageCircle,
       title: 'Support VIP dédié',
-      description: 'Assistance prioritaire 7j/7 avec réponse sous 30 minutes maximum.',
       backgroundImage: '/images/vip-support.png',
       badge: 'Réponse rapide'
     },
     {
       icon: BarChart3,
       title: 'Suivi personnalisé',
-      description: 'Statistiques de performance et conseils adaptés à votre profil.',
       backgroundImage: '/images/vip-suivi.png',
       badge: 'Sur-mesure'
     },
     {
       icon: Diamond,
       title: 'Montantes exclusives',
-      description: 'Stratégies de montées d\'enjeux optimisées pour des gains maximums.',
       backgroundImage: '/images/vip-montantes.png',
       badge: 'Premium'
     }
