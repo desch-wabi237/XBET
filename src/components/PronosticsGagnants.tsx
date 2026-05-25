@@ -73,7 +73,7 @@ const PronosticsGagnants = () => {
           className="mb-4"
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: "'Orbitron', monospace" }}>
-            <span className={`bg-gradient ${
+            <span className={`bg-linear-to-r ${
               theme === 'blue' 
                 ? 'from-primary via-primary-light to-accent' 
                 : 'from-yellow-500 via-yellow-400 to-yellow-300'

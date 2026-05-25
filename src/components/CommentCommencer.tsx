@@ -191,7 +191,7 @@ const CommentCommencer = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold mb-4 font-['Orbitron']">
-            <span className={` ${getGradientClass()} bg-clip-text text-transparent`}>
+            <span className={`bg-linear-to-r ${getGradientClass()} bg-clip-text text-transparent`}>
               🚀 Comment commencer ?
             </span>
           </h2>
@@ -446,40 +446,6 @@ const CommentCommencer = () => {
             ))}
           </div>
         </div>
-
-        {/* Statistiques finales */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="text-center mt-12"
-        >
-          <div className="glass rounded-xl p-6 inline-block w-full">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div className="flex items-center justify-center gap-3">
-                <Users className={`w-6 h-6 ${theme === 'blue' ? 'text-primary-light' : 'text-yellow-400'}`} />
-                <div>
-                  <div className="text-2xl font-bold">10,000+</div>
-                  <div className="text-text-secondary text-xs">Membres actifs</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-3">
-                <Award className={`w-6 h-6 ${theme === 'blue' ? 'text-primary-light' : 'text-yellow-400'}`} />
-                <div>
-                  <div className="text-2xl font-bold">98.7%</div>
-                  <div className="text-text-secondary text-xs">Satisfaction</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-3">
-                <Ticket className={`w-6 h-6 ${theme === 'blue' ? 'text-primary-light' : 'text-yellow-400'}`} />
-                <div>
-                  <div className="text-2xl font-bold">500+</div>
-                  <div className="text-text-secondary text-xs">Tickets gagnants</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Modal pour afficher l'image en grand */}
