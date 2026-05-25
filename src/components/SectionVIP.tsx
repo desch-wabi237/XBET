@@ -76,7 +76,7 @@ const SectionVIP = () => {
       icon: Diamond,
       title: 'Montantes exclusives',
       description: 'Stratégies de montées d\'enjeux optimisées pour des gains maximums.',
-      backgroundImage: '/images/vip-montantes.jpg',
+      backgroundImage: '/images/vip-montantes.png',
       badge: 'Premium'
     }
   ]
