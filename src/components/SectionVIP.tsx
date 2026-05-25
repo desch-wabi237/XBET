@@ -241,7 +241,6 @@ const SectionVIP = () => {
                   
                   <div>
                     <h4 className="text-white font-bold text-sm mb-1">{benefit.title}</h4>
-                    <p className="text-white/80 text-[11px] line-clamp-2">{benefit.description}</p>
                   </div>
                 </div>
               </motion.div>
